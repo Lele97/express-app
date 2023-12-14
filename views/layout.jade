@@ -2,10 +2,14 @@ doctype html
 html
     head
         title= title
-        link(rel='stylesheet', href='/stylesheets/style.css')
+        meta(charset="UTF-8")
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Noto+Sans+Zanabazar+Square&family=Noto+Sans:wght@300;400&family=Open+Sans:wght@300&family=Oxygen&family=Roboto+Slab:wght@200;300;400&family=Roboto:wght@300&family=Saira+Condensed:wght@100;200&display=swap')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Noto+Sans+Zanabazar+Square&family=Noto+Sans:wght@300;400&family=Open+Sans:wght@300&family=Oxygen&family=Roboto:wght@300&family=Saira+Condensed:wght@100;200&display=swap')
+        link(type="image/x-icon", rel="icon", href="image/nodejs.ico")
+        link(rel='stylesheet', href='css/style.css')
+        link(rel='stylesheet', href='bootstrap/bootstrap.min.css')
     body
         block content
-
         include  footer
 
 

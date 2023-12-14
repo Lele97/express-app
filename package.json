@@ -1,9 +1,12 @@
 {
   "name": "express-app",
+  "description": "nodejs web application with Express framework",
+  "author": "Gabriele Grandinetti",
   "version": "0.0.0",
+  "main": "./bin/www",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
@@ -12,6 +15,7 @@
     "express": "~4.18.2",
     "http-errors": "~2.0.0",
     "jade": "~1.11.0",
-    "morgan": "~1.10.0"
+    "morgan": "~1.10.0",
+    "nodemon": "^3.0.2"
   }
 }

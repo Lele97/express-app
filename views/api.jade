@@ -1,6 +1,29 @@
 extends layout
 
 block content
-    h1= "API"
-    p Welcome to API
-    h1= message
+    div(id="custom-section", class="container-fluid")
+        h1= "Welcome"
+        h6(class="custom-color-text")= message
+        p(class="p_number_result") Sono stati trovati #{number} elementi
+
+        table(class="table table-striped table-borderless caption-top custom-table")
+            caption(class="custom-caption custom-color-text") List of Api
+            thead
+                tr(id="rowHeader")
+                    td= "API"
+                    td= "Description"
+                    td= "Auth"
+                    td= "HTTPS"
+                    td= "Cors"
+                    td= "Link"
+                    td= "Category"
+            tbody
+                for result in results
+                    tr(id="rowBody")
+                        td #{result.API}
+                        td #{result.Description}
+                        td #{result.Auth}
+                        td #{result.HTTPS}
+                        td #{result.Cors}
+                        td #{result.Link}
+                        td #{result.Category}
