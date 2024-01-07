@@ -13,6 +13,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use("/image", express.static(path.join(__dirname, 'public', 'images')));
 app.use("/css", express.static(path.join(__dirname, 'public', 'stylesheets')));
+app.use("/js", express.static(path.join(__dirname, 'public', 'javascipt')))
 app.use("/bootstrap", express.static(path.join(__dirname, 'node_modules', 'bootstrap', 'dist', 'css')))
 app.use(logger('combined'));
 app.use(express.json());

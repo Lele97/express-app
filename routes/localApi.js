@@ -1,6 +1,7 @@
 const express = require("express")
 const router = express.Router();
 let json_data = require("../data/nodejs_public_api_short.json")
+const client = require("../connectionMongoDB")
 
 router.get("/", (req, res) => {
 

@@ -1,10 +1,9 @@
 extends layout
 
 block content
-    div(id="custom-section", class="container-fluid")
-        h1= "Welcome"
-        h6(class="custom-color-text")= message
-        p(class="p_number_result") Sono stati trovati #{number} elementi
+    div(class="container-fluid")
+        
+        p Sono stati trovati #{number} elementi
 
         table(class="table table-striped table-borderless caption-top custom-table")
             caption(class="custom-caption custom-color-text") List of Api
