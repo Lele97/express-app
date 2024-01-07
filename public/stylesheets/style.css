@@ -1,3 +1,5 @@
+@import "https://unpkg.com/open-props/easings.min.css";
+
 body {
     font-family: 'Roboto Slab', serif !important;
 }
@@ -46,8 +48,6 @@ div#custom-section {
 
 
 /* switch darck theme button */
-@import "https://unpkg.com/open-props/easings.min.css";
-
 .sun-and-moon > :is(.moon, .sun, .sun-beams) {
   transform-origin: center;
 }
