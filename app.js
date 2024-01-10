@@ -6,6 +6,7 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const apiRouter = require("./routes/api")
+const contactsRouter = require("./routes/contacts")
 const app = express();
 
 // view engine setup
@@ -21,7 +22,8 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use("/apiLocal", apiRouter)
+app.use("/api", apiRouter)
+app.use("/contacts", contactsRouter)
 
 const errorHandling = (err, req, res) => {
     res.locals.message = err.message;
